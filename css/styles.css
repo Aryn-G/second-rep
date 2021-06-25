@@ -28,7 +28,9 @@ body {
   background: #fff;
   font-size: 38px;
   border: none;
-  margin: 5px;
+  margin-top: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
   border-radius: 1rem;
   text-align: center;
   box-shadow: -6px -6px 10px rgba(255, 255, 255, 0.8),
