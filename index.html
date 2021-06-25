@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <!-- style sheet -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- J Query -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="main-game">
+      <button id="cat-btn" value="play">PLAY</button>
+    </div>
+
+    <script>
+      $("#cat-btn").on("click", function () {
+        //clear the main-game screen
+        //MAYBE later add stinger transtion
+
+        const cats = [];
+        const food_ones = [];
+        const food_twos = [];
+        const food_threes = [];
+        const food_fours = [];
+        const food_fives = [];
+        const food_tens = [];
+        
+        $.ajax({
+          //FOOD
+          url: "http://jservice.io/api/category?id=49",
+          method: "GET",
+        }).then(function (res) {
+          const clueArr = res.clues;
+          clueArr.sort((a, b) => a.value - b.value);
+
+          for (let i = 0; i < clueArr.length; i++) {
+            if (clueArr[i].value == null) {
+              clueArr.splice(i, 1);
+              res.clues_count--;
+            } else if (clueArr[i].value == 100) {
+              food_ones.push(clueArr.splice(i, 1));
+              res.clues_count--;
+            } else if (clueArr[i].value == 200) {
+              food_twos.push(clueArr.splice(i, 1));
+              res.clues_count--;
+            } else if (clueArr[i].value == 300) {
+              food_threes.push(clueArr.splice(i, 1));
+              res.clues_count--;
+            } else if (clueArr[i].value == 400) {
+              food_fours.push(clueArr.splice(i, 1));
+              res.clues_count--;
+            } else if (clueArr[i].value == 500) {
+              food_fives.push(clueArr.splice(i, 1));
+              res.clues_count--;
+            } else if (clueArr[i].value == 1000) {
+              food_tens.push(clueArr.splice(i, 1));
+              res.clues_count--;
+            }
+          }
+
+          console.log(
+            food_ones,
+            food_twos,
+            food_threes,
+            food_fours,
+            food_fives,
+            food_tens
+          );
+        });
+
+        if ($(this).val() == "play") {
+          const gameFrame = $("#main-game");
+          gameFrame.empty();
+          for (let i = 0; i < cats.length; i++) {
+            const element = cats[i];
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
