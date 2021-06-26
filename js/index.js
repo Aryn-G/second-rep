@@ -8,7 +8,7 @@
 //on play click hide play button
 //display category buttons
 
-$("#cat-btn").on("click", function () {
+$(".play").on("click", function () {
   //clear the main-game screen
   //MAYBE later add stinger transtion
 
@@ -22,7 +22,7 @@ $("#cat-btn").on("click", function () {
   const food_tens = [];
   const gameFrame = $("#main-game");
 
-  const thisVal = $(this).val()
+  const thisVal = $(this).val();
 
   $.ajax({
     //FOOD
@@ -65,18 +65,18 @@ $("#cat-btn").on("click", function () {
       food_fives,
       food_tens
     );
-    cats.push(foods, ["name", 0]);
+    cats.push(foods, ["test", 0]);
     console.log(cats);
 
     if (thisVal == "play") {
       gameFrame.empty();
       console.log("here", cats.length);
       for (let i = 0; i < cats.length; i++) {
-        newBtn = $("<button id='cat-btn'>" + cats[i][0] + "</button>")
-        gameFrame.append(newBtn)
-
+        newBtn = $(
+          `<button class='cat-btn cat-${cats[i][0].toLowerCase()}'>${cats[i][0]}</button>`
+        );
+        gameFrame.append(newBtn);
       }
-      
     }
   });
 });

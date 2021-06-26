@@ -18,7 +18,7 @@ body {
   border-radius: 1rem;
 }
 
-#cat-btn {
+.cat-btn {
   font-family: "Varela Round", sans-serif;
   font-weight: bolder;
   letter-spacing: 0.5rem;
@@ -38,12 +38,12 @@ body {
   transition: 0.1s ease-in-out;
 }
 
-#cat-btn:hover {
+.cat-btn:hover {
   opacity: 0.9;
   box-shadow: -6px -6px 8px rgba(255, 255, 255, 0.5),
     6px 6px 8px rgba(0, 0, 0, 0.1);
 }
-#cat-btn:active {
+.cat-btn:active {
   opacity: 0.9;
   box-shadow: inset -6px -6px 10px rgba(255, 255, 255, 0.7),
     inset 6px 6px 10px rgba(0, 0, 0, 0.2); 
