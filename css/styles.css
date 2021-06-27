@@ -1,3 +1,8 @@
+* {
+  font-family: "Varela Round", sans-serif;
+  color: #2f9c95;
+}
+
 body {
   width: 90vw;
   height: 90vh;
@@ -9,7 +14,7 @@ body {
 #main-game {
   margin-top: 1%;
   width: 80%;
-  height: 70%;
+  height: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,12 +24,11 @@ body {
 }
 
 .cat-btn {
-  font-family: "Varela Round", sans-serif;
   font-weight: bolder;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.25rem;
   color: #2f9c95;
   width: 500px;
-  height: 75px;
+  height: 100px;
   background: #fff;
   font-size: 38px;
   border: none;
@@ -49,4 +53,7 @@ body {
     inset 6px 6px 10px rgba(0, 0, 0, 0.2); 
 }
 
-
+.play img {
+  width: 80px;
+  height: 80px;
+}
