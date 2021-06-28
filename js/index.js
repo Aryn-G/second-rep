@@ -32,6 +32,9 @@ let cAnswer;
 let cQuestion;
 let perCorrect;
 let currentVal;
+let currentPoint;
+
+let score = 0;
 
 const gameFrame = $("#main-game");
 
@@ -76,6 +79,8 @@ $(".play").on("click", function () {
         res1.clues_count--;
       }*/
     }
+
+    food1.splice(14, 1);
     foods.push(
       "Foods",
       "foods",
@@ -177,16 +182,9 @@ $(".play").on("click", function () {
         );
 
         cats.push(usStates);
-
+        console.log(cats);
         if (thisVal == "play") {
-          emptyGame();
-          console.log(cats);
-          for (let i = 0; i < cats.length; i++) {
-            newBtn = $(
-              `<button class='cat-btn cat' value='${cats[i][1]}'>${cats[i][0]}</button>`
-            );
-            gameFrame.append(newBtn);
-          }
+          loadCats();
         }
       });
     });
@@ -247,43 +245,49 @@ $(document).on("click", ".num", function () {
   //just learned about eval("var name")
   //but am too lazy to change the rest of the code
   const numVal = $(this).val();
+  const point = $(this).text();
+  currentPoint = point;
   currentVal = numVal;
   //When button clicked, give the player a random question to answer with that val
-  assignQ(numVal);
+  assignQ(numVal, point);
 });
 
-function assignQ(value) {
+function assignQ(value, point) {
   if (eval(value).length != 0) {
     const randomNum = Math.floor(Math.random() * eval(value).length);
     emptyGame();
+
+    $(".score").text("Score: " + score);
 
     cQuestion = eval(value)[randomNum][0].question;
     cAnswer = eval(value)[randomNum][0].answer;
 
     newQuestion = $(`<h1>${cQuestion}</h1>`);
-    gameFrame.prepend(newQuestion);
+    gameFrame.append(newQuestion);
     gameFrame.append(
-      `<div id="input-cont">
-        <br/>
+      ` 
+        <br />
+        <br />
         <span id="user-span">
           What Is: 
         </span>
-        <input class="user-answer" type="text" autofocus></input>
-        <button class="cat-btn next">
-          Next
-        </button>
+
+        <div id="input-cont">
+          <br />
+          <button class="cat-btn back">
+            Back
+          </button>
+      
+          <input class="user-answer" type="text" point="${point}" autofocus></input>
+          <button class="cat-btn next">
+            Next
+          </button>
       </div>`
     );
 
     eval(value).splice(randomNum, 1);
   } else {
-    emptyGame();
-    for (let i = 0; i < cats.length; i++) {
-      newBtn = $(
-        `<button class='cat-btn cat' value='${cats[i][1]}'>${cats[i][0]}</button>`
-      );
-      gameFrame.append(newBtn);
-    }
+    loadCats();
   }
 }
 
@@ -305,17 +309,16 @@ $(document).on("keypress", ".user-answer", function (e) {
         perCorrect
     );
 
-    if (perCorrect >= 0.75) {
-      console.log("cor");
+    if (perCorrect >= 0.692) {
       $(".user-answer").attr("id", "cor");
-      gameFrame.append(
-        `<br> <p id="user-span">Press right arrow to continue</p>`
-      );
+      score += eval($(this).attr("point"));
+      $(".score").text("Score: " + score);
     } else {
-      console.log("incor");
       $(".user-answer").attr("id", "incor");
+      score -= eval($(this).attr("point"));
+      $(".score").text("Score: " + score);
       gameFrame.append(
-        `<span id="user-span">Correct Answer is: ${cAnswer}<br> <p>Press right arrow to continue</p></span>`
+        `<span id="user-span">Correct Answer is: ${cAnswer}<br></span>`
       );
     }
 
@@ -337,8 +340,8 @@ $(document).on("keypress", ".user-answer", function (e) {
     }
 
     function editDistance(s1, s2) {
-      s1 = s1.toLowerCase().replace(/([^a-z0-9])/g);
-      s2 = s2.toLowerCase().replace(/([^a-z0-9])/g);
+      s1 = s1.toLowerCase();
+      s2 = s2.toLowerCase();
 
       var costs = new Array();
       for (var i = 0; i <= s1.length; i++) {
@@ -360,15 +363,33 @@ $(document).on("keypress", ".user-answer", function (e) {
       }
       return costs[s2.length];
     }
-
   }
 });
 
 $(document).on("click", ".next", function () {
-  assignQ(currentVal);
+  assignQ(currentVal, currentPoint);
 });
 $(document).on("keypress", ".next", function (e) {
   if (e.which == 13) {
-    assignQ(currentVal);
+    assignQ(currentVal, currentPoint);
   }
 });
+$(document).on("click", ".back", function () {
+  loadCats();
+});
+$(document).on("keypress", ".back", function (e) {
+  if (e.which == 13) {
+    loadCats();
+  }
+});
+
+function loadCats() {
+  emptyGame();
+  $(".score").text("Score: " + score);
+  for (let i = 0; i < cats.length; i++) {
+    newBtn = $(
+      `<button class='cat-btn cat' value='${cats[i][1]}'>${cats[i][0]}</button>`
+    );
+    gameFrame.append(newBtn);
+  }
+}

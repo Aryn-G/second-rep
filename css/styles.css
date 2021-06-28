@@ -6,9 +6,13 @@
 body {
   width: 90vw;
   height: 90vh;
+  background-color: #a3f7b5;
+}
+#body {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
-  background-color: #a3f7b5;
 }
 
 /* #main-game {
@@ -113,10 +117,12 @@ h1 {
 
 #cor {
   background: #7fffaa;
+  color: white;
 }
 
 #incor {
   background: #ff7f7f;
+  color: white;
 }
 
 .user-answer {
@@ -145,10 +151,10 @@ h1 {
   color: #2f9c95;
   width: auto;
   height: auto;
-  position: relative;
   font-size: 38px;
 }
-.next {
+.next, 
+.back {
   width: 250px;
   height: 75px;
 }
@@ -156,4 +162,8 @@ h1 {
 button:focus {
   outline: none;
   box-shadow: 0 0 0 2px #ffffff77, 0 0 3px 5px #2f9c958c;
+}
+
+.score {
+  margin-top: 10px;
 }
