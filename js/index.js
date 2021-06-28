@@ -28,13 +28,15 @@ const state4 = [];
 const state5 = [];
 // const state10 = [];
 
-let cAnswer; 
+let cAnswer;
 let cQuestion;
+let perCorrect;
+let currentVal;
 
 const gameFrame = $("#main-game");
 
-
 function emptyGame() {
+  //want to start string transition
   $("#main-game").empty();
 }
 $(".play").on("click", function () {
@@ -210,27 +212,33 @@ $(document).on("click", ".cat", function () {
       newNumBtn = $(
         `<button class='cat-btn num' value='holi${temp1}' parent="holidays">${temp}</button>`
       );
+      if (eval(`holi${temp1}`).length != 0) {
+        gameFrame.append(newNumBtn);
+      }
       temp += 100;
       temp1++;
-      gameFrame.append(newNumBtn);
     }
   } else if (catVal == "usStates") {
     for (let i = 2; i < usStates.length; i++) {
       newNumBtn = $(
         `<button class='cat-btn num' value='state${temp1}' parent="usState">${temp}</button>`
       );
+      if (eval(`state${temp1}`).length != 0) {
+        gameFrame.append(newNumBtn);
+      }
       temp += 100;
       temp1++;
-      gameFrame.append(newNumBtn);
     }
   } else if (catVal == "foods") {
     for (let i = 2; i < foods.length; i++) {
       newNumBtn = $(
         `<button class='cat-btn num' value='food${temp1}' parent="foods">${temp}</button>`
       );
+      if (eval(`food${temp1}`).length != 0) {
+        gameFrame.append(newNumBtn);
+      }
       temp += 100;
       temp1++;
-      gameFrame.append(newNumBtn);
     }
   }
 });
@@ -238,11 +246,129 @@ $(document).on("click", ".cat", function () {
 $(document).on("click", ".num", function () {
   //just learned about eval("var name")
   //but am too lazy to change the rest of the code
-
-  //When button clicked, give the player a random question to answer with that val
   const numVal = $(this).val();
-  emptyGame();
-  console.log(
-    Math.floor(Math.random() * eval(numVal).length)[0].question
-  )
+  currentVal = numVal;
+  //When button clicked, give the player a random question to answer with that val
+  assignQ(numVal);
+});
+
+function assignQ(value) {
+  if (eval(value).length != 0) {
+    const randomNum = Math.floor(Math.random() * eval(value).length);
+    emptyGame();
+
+    cQuestion = eval(value)[randomNum][0].question;
+    cAnswer = eval(value)[randomNum][0].answer;
+
+    newQuestion = $(`<h1>${cQuestion}</h1>`);
+    gameFrame.prepend(newQuestion);
+    gameFrame.append(
+      `<div id="input-cont">
+        <br/>
+        <span id="user-span">
+          What Is: 
+        </span>
+        <input class="user-answer" type="text" autofocus></input>
+        <button class="cat-btn next">
+          Next
+        </button>
+      </div>`
+    );
+
+    eval(value).splice(randomNum, 1);
+  } else {
+    emptyGame();
+    for (let i = 0; i < cats.length; i++) {
+      newBtn = $(
+        `<button class='cat-btn cat' value='${cats[i][1]}'>${cats[i][0]}</button>`
+      );
+      gameFrame.append(newBtn);
+    }
+  }
+}
+
+$(document).on("keypress", ".user-answer", function (e) {
+  if (e.which == 13) {
+    userAnswer = $(".user-answer").val();
+    $(".user-answer").val(userAnswer);
+    $(".user-answer").prop("disabled", "disabled");
+    $(".next").focus();
+
+    perCorrect = similarity(cAnswer, userAnswer);
+
+    console.log(
+      "A: " +
+        cAnswer +
+        " You Put: " +
+        userAnswer +
+        " Persentage Correct: " +
+        perCorrect
+    );
+
+    if (perCorrect >= 0.75) {
+      console.log("cor");
+      $(".user-answer").attr("id", "cor");
+      gameFrame.append(
+        `<br> <p id="user-span">Press right arrow to continue</p>`
+      );
+    } else {
+      console.log("incor");
+      $(".user-answer").attr("id", "incor");
+      gameFrame.append(
+        `<span id="user-span">Correct Answer is: ${cAnswer}<br> <p>Press right arrow to continue</p></span>`
+      );
+    }
+
+    function similarity(s1, s2) {
+      var longer = s1;
+      var shorter = s2;
+      if (s1.length < s2.length) {
+        longer = s2;
+        shorter = s1;
+      }
+      var longerLength = longer.length;
+      if (longerLength == 0) {
+        return 1.0;
+      }
+      return (
+        (longerLength - editDistance(longer, shorter)) /
+        parseFloat(longerLength)
+      );
+    }
+
+    function editDistance(s1, s2) {
+      s1 = s1.toLowerCase().replace(/([^a-z0-9])/g);
+      s2 = s2.toLowerCase().replace(/([^a-z0-9])/g);
+
+      var costs = new Array();
+      for (var i = 0; i <= s1.length; i++) {
+        var lastValue = i;
+        for (var j = 0; j <= s2.length; j++) {
+          if (i == 0) costs[j] = j;
+          else {
+            if (j > 0) {
+              var newValue = costs[j - 1];
+              if (s1.charAt(i - 1) != s2.charAt(j - 1))
+                newValue =
+                  Math.min(Math.min(newValue, lastValue), costs[j]) + 1;
+              costs[j - 1] = lastValue;
+              lastValue = newValue;
+            }
+          }
+        }
+        if (i > 0) costs[s2.length] = lastValue;
+      }
+      return costs[s2.length];
+    }
+
+  }
+});
+
+$(document).on("click", ".next", function () {
+  assignQ(currentVal);
+});
+$(document).on("keypress", ".next", function (e) {
+  if (e.which == 13) {
+    assignQ(currentVal);
+  }
 });
