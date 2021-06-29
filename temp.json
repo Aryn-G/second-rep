@@ -1,0 +1,2450 @@
+[
+  [
+    "Foods",
+    "foods",
+    [
+      [
+        {
+          "id": 392,
+          "answer": "grapes",
+          "question": "When you step on these, they let out a little \"wine\"",
+          "value": 100,
+          "airdate": "1984-11-26T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 1781,
+          "answer": "licorice",
+          "question": "Herbs anise & fennel resemble the flavor of this common black candy",
+          "value": 100,
+          "airdate": "1985-10-03T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 3280,
+          "answer": "Sanka",
+          "question": "The name of this brand of coffee comes from the French \"sans caffeine\"",
+          "value": 100,
+          "airdate": "1986-11-04T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 3640,
+          "answer": "stew",
+          "question": "Sometimes made with squirrel, the Brunswick type of this more often contains chicken & lima beans",
+          "value": 100,
+          "airdate": "1988-07-05T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 4118,
+          "answer": "potatoes",
+          "question": "The Quechua language of Peru has about one thousand words for these tubers Peruvians have grown for eight thousand years",
+          "value": 100,
+          "airdate": "1987-11-19T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 5309,
+          "answer": "Rhubarb",
+          "question": "Also known as \"pieplant\", its stalks are baked in pies, usually with strawberries",
+          "value": 100,
+          "airdate": "1990-06-01T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 6208,
+          "answer": "Butter",
+          "question": "In India, ghee, which is a clarified form of this, is widely used in cooking",
+          "value": 100,
+          "airdate": "1990-03-29T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 7046,
+          "answer": "Butter",
+          "question": "With far less fat than margarine, Le Slim Cow is a French substitute for this dairy product",
+          "value": 100,
+          "airdate": "1990-01-19T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 8399,
+          "answer": "dressing",
+          "question": "Sauce for salad, or stuffing for a fowl",
+          "value": 100,
+          "airdate": "1991-03-20T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 9476,
+          "answer": "Waffle",
+          "question": "The Belgian type of this battercake is served for breakfast or for dessert",
+          "value": 100,
+          "airdate": "1991-11-15T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 9929,
+          "answer": "cauliflower",
+          "question": "Broccoflower, a relatively new vegetable, is a cross between broccoli & this",
+          "value": 100,
+          "airdate": "1993-07-09T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 10569,
+          "answer": "Philadelphia",
+          "question": "The cheese steak sandwich is said to have originated in this eastern city in the 1930s",
+          "value": 100,
+          "airdate": "1993-02-26T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 12577,
+          "answer": "navel",
+          "question": "This seedless type of orange is named for the protuberance at its blossom end",
+          "value": 100,
+          "airdate": "1994-12-22T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 12848,
+          "answer": "croutons",
+          "question": "While these small bread cubes often top salads, larger versions can be used to catch drippings",
+          "value": 100,
+          "airdate": "1994-11-17T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 20318,
+          "answer": "the pit",
+          "question": "In a cling peach the flesh clings to this",
+          "value": 100,
+          "airdate": "1996-10-04T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 24639,
+          "answer": "Marrow",
+          "question": "Change one letter in the herb yarrow & you'll get this foodstuff found in bones",
+          "value": 100,
+          "airdate": "1998-01-19T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "id": 251,
+          "answer": "pasta",
+          "question": "Type of food that comes in shapes of bow ties, elbows & wagon wheels",
+          "value": 200,
+          "airdate": "1984-12-04T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 974,
+          "answer": "pita",
+          "question": "From Turkish for \"dough\", you can pick the pockets of this Mideastern bread",
+          "value": 200,
+          "airdate": "1986-02-07T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 1874,
+          "answer": "Dagwood sandwich",
+          "question": "Towering snack named for comic strip character whose nocturnal noshes cleaned out the fridge",
+          "value": 200,
+          "airdate": "1985-09-30T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 3434,
+          "answer": "eclair",
+          "question": "French for \"lightning\", it's a custard-filled chocolate-covered pastry that can strike your waistline",
+          "value": 200,
+          "airdate": "1986-10-08T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 4067,
+          "answer": "mincemeat pie (mince pie accepted)",
+
+          "question": "1 recipe for this holiday pie filling calls for candied orange peel, chopped ox heart, & suet",
+          "value": 200,
+          "airdate": "1987-12-09T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 5013,
+          "answer": "the Jerusalem artichoke",
+
+          "question": "Called an artichoke, its name isn't from a Mideast city but from \"girasole\", Italian for sunflower",
+          "value": 200,
+          "airdate": "1988-11-16T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 5403,
+          "answer": "Hot Dog",
+          "question": "In the early 1900s this fast food was sometimes called \"Coney Island Chicken\"",
+          "value": 200,
+          "airdate": "1990-05-22T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 6663,
+          "answer": "tomatoes",
+          "question": "Use these when an Italian recipe calls for \"pomodori\"",
+          "value": 200,
+          "airdate": "1990-02-19T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 7503,
+          "answer": "white",
+          "question": "It's the color of the squiggles on Hostess chocolate cupcakes",
+          "value": 200,
+          "airdate": "1989-11-20T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 9002,
+          "answer": "a Napoleon",
+          "question": "Consisting of puff pastry layered with custard or cream, this pastry's fit for a French emperor",
+          "value": 200,
+          "airdate": "1990-09-03T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 9813,
+          "answer": "grits",
+          "question": "Coarse hominy is called samp & ground hominy, this",
+          "value": 200,
+          "airdate": "1991-10-11T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 10173,
+          "answer": "a sandwich",
+          "question": "This lunch staple is named for the earldom of inveterate gambler John Montagu",
+          "value": 200,
+          "airdate": "1993-06-28T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 12583,
+          "answer": "salmon",
+          "question": "Nova is a cold-smoked type of this fish originally from Nova Scotia",
+          "value": 200,
+          "airdate": "1994-12-22T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 12854,
+          "answer": "Steak Tartare",
+          "question": "A raw egg yolk usually accompanies this raw meat dish",
+          "value": 200,
+          "airdate": "1994-11-17T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 17772,
+          "answer": "Cow",
+          "question": "To make provolone, use milk from this animal",
+          "value": 200,
+          "airdate": "1997-03-07T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 20324,
+          "answer": "<i>Schnitzel</i>",
+          "question": "This word that often follows wiener means \"cutlet\" in German",
+          "value": 200,
+          "airdate": "1996-10-04T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 24645,
+          "answer": "Tabasco",
+          "question": "This zesty sauce named for a Mexican state includes peppers fermented for 3 years",
+          "value": 200,
+          "airdate": "1998-01-19T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 74886,
+          "answer": "blueberries",
+          "question": "The first new variety of Eggo waffle Kellogg's made was one with this fruit in 1972",
+          "value": 200,
+          "airdate": "2005-11-21T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 79896,
+          "answer": "a burrito",
+          "question": "A \"giant flour tortilla\" wrapped around meat, beans & cheese, it's a mainstay of the Chipotle chain",
+          "value": 200,
+          "airdate": "2007-02-15T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 131784,
+          "answer": "the croissant",
+          "question": "Among Time magazine's 25 Best Inventions of 2013 was the cronut, a cross between this & a donut",
+          "value": 200,
+          "airdate": "2014-09-17T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 155243,
+          "answer": "the croissant",
+          "question": "Among Time magazine's 25 Best Inventions of 2013 was the cronut, a cross between this & a donut",
+          "value": 200,
+          "airdate": "2014-09-17T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": 4649,
+          "invalid_count": null
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "id": 404,
+          "answer": "<i>au jus</i>",
+
+          "question": "French term for meat served in its own juice",
+          "value": 300,
+          "airdate": "1984-11-26T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 1793,
+          "answer": "margarine",
+          "question": "When it was 1st introduced into England from France, it was called \"butterine\"",
+          "value": 300,
+          "airdate": "1985-10-03T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 3292,
+          "answer": "raisin bread",
+          "question": "It's said Henry David Thoreau invented this loaf with dried fruit baked in",
+          "value": 300,
+          "airdate": "1986-11-04T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 3652,
+          "answer": "bread",
+          "question": "Reportedly named for a girl who sold it in the streets, Sally Lunn is a sweet variety of this",
+          "value": 300,
+          "airdate": "1988-07-05T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 5019,
+          "answer": "how to thicken a sauce",
+
+          "question": "Add blood, cornstarch, or arrowroot, or try reduction",
+          "value": 300,
+          "airdate": "1988-11-16T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 5409,
+          "answer": "the avocado",
+          "question": "Native to Mexico, this pear-shaped green fruit is a hardy member of the laurel family",
+          "value": 300,
+          "airdate": "1990-05-22T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 6669,
+          "answer": "South America",
+          "question": "Most botanists believe the Irish potato originally came from this continent",
+          "value": 300,
+          "airdate": "1990-02-19T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 7509,
+          "answer": "pancakes",
+          "question": "Blintzes are rolled ones, often filled with cheese",
+          "value": 300,
+          "airdate": "1989-11-20T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 9008,
+          "answer": "pizzas",
+          "question": "The USDA made Wolfgang Puck add tomato in order to sell his frozen pies as these",
+          "value": 300,
+          "airdate": "1990-09-03T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 9819,
+          "answer": "Philadelphia",
+          "question": "The cheese steak sandwich is thought to have originated in this city in the 1930s",
+          "value": 300,
+          "airdate": "1991-10-11T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 10179,
+          "answer": "red & golden",
+
+          "question": "Delicious apples come in these 2 color varieties",
+          "value": 300,
+          "airdate": "1993-06-28T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 12589,
+          "answer": "gravy",
+          "question": "Coffee is often the liquid used to make the redeye type of this",
+          "value": 300,
+          "airdate": "1994-12-22T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 12860,
+          "answer": "squash",
+          "question": "Butternut refers to both an actual nut & this type of gourd",
+          "value": 300,
+          "airdate": "1994-11-17T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 20271,
+          "answer": "corn syrup",
+          "question": "This syrup made of dextrose, maltose & dextrin helps keep candy from getting grainy",
+          "value": 300,
+          "airdate": "1996-10-10T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 21258,
+          "answer": "Croissant",
+          "question": "Its history shows the French taking an Austrian crescent roll & making it with puff pastry, not bread dough",
+          "value": 300,
+          "airdate": "1998-06-25T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 34851,
+          "answer": "chicken pot pie",
+          "question": "Banquet introduced its first frozen food product in 1953, this type of pie",
+          "value": 300,
+          "airdate": "2000-07-04T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "id": 410,
+          "answer": "caraway seeds",
+          "question": "Found in rye bread, these seeds are also flavoring of kummel liqueur",
+          "value": 400,
+          "airdate": "1984-11-26T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 1799,
+          "answer": "a Salisbury steak",
+          "question": "Named for an English dr. who recommended meat as cure-all, it's a hamburger without a bun",
+          "value": 400,
+          "airdate": "1985-10-03T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 2006,
+          "answer": "gelatin",
+          "question": "Glutinous protein made from animal skin & bones, it' used to make film & wobbly desserts",
+          "value": 400,
+          "airdate": "1987-06-22T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 3446,
+          "answer": "bulb",
+          "question": "Plant part you're eating when you eat an onion or garlic",
+          "value": 400,
+          "airdate": "1986-10-08T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 4079,
+          "answer": "clarified",
+          "question": "After melted butter has its sediment removed, it's called this",
+          "value": 400,
+          "airdate": "1987-12-09T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 5327,
+          "answer": "Knish",
+          "question": "This Jewish-American pastry is made with dough & can be stuffed with potato or cheese",
+          "value": 400,
+          "airdate": "1990-06-01T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 6675,
+          "answer": "pastrami",
+          "question": "This deli item is corned beef that's been rubbed with pepper & spices, smoked & then steamed",
+          "value": 400,
+          "airdate": "1990-02-19T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 7515,
+          "answer": "leeks",
+          "question": "The Welsh like to eat them, as well as wear them on St. David's Day",
+          "value": 400,
+          "airdate": "1989-11-20T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 9014,
+          "answer": "squabs",
+          "question": "They're immature pigeons sometimes raised for food",
+          "value": 400,
+          "airdate": "1990-09-03T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 9825,
+          "answer": "hops",
+          "question": "In Europe, some cook & eat the shoots of this beer-flavoring vine",
+          "value": 400,
+          "airdate": "1991-10-11T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 10185,
+          "answer": "Russian dressing",
+          "question": "This salad dressing is actually American; its name may come from the fact that it once contained caviar",
+          "value": 400,
+          "airdate": "1993-06-28T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 12595,
+          "answer": "(hot) cross buns",
+          
+          "question": "These warmed, sweet treats are traditionally served on Good Friday",
+          "value": 400,
+          "airdate": "1994-12-22T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 12866,
+          "answer": "a frittata",
+          "question": "It's an Italian version of an omelet, served pancake-style",
+          "value": 400,
+          "airdate": "1994-11-17T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 20277,
+          "answer": "truffles",
+          "question": "The black perigord variety of this precious fungus is usually cooked; the white Italian, served raw",
+          "value": 400,
+          "airdate": "1996-10-10T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 21264,
+          "answer": "Potato chips",
+          "question": "In 1938 Herman Warden Lay started selling these under his own brand name",
+          "value": 400,
+          "airdate": "1998-06-25T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 34857,
+          "answer": "Betty Crocker",
+          "question": "The last name of a former General Mills director was immortalized in this cake mix line",
+          "value": 400,
+          "airdate": "2000-07-04T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 77234,
+          "answer": "mustard",
+          "question": "Munich's traditional Weisswurst, a veal sausage, is naked without Senf, German for this",
+          "value": 400,
+          "airdate": "2007-06-20T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 119411,
+          "answer": "lychee",
+          "question": "A favorite since ancient times, this Chinese fruit is called a \"nut\" when it's dried",
+          "value": 400,
+          "airdate": "2013-01-18T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 155249,
+          "answer": "a cutlet",
+          "question": "It's the 6-letter term for a thin slice of meat, especially pork or veal, that's broiled or fried",
+          "value": 400,
+          "airdate": "2014-09-17T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": 4649,
+          "invalid_count": null
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "id": 269,
+          "answer": "brownies",
+          "question": "The non-chocolate version are called \"blondies\"",
+          "value": 500,
+          "airdate": "1984-12-04T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 992,
+          "answer": "compote",
+          "question": "French for stewed fruit, it can also be the bowl it's served in",
+          "value": 500,
+          "airdate": "1986-02-07T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 1892,
+          "answer": "rice table",
+          "question": "The Indonesian smorgasbord, \"Rijsttafel\", means this",
+          "value": 500,
+          "airdate": "1985-09-30T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 3304,
+          "answer": "calcium",
+          "question": "Sales of this mineral supplement have increased 7-fold since 1980",
+          "value": 500,
+          "airdate": "1986-11-04T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 4085,
+          "answer": "soy",
+          "question": "A milk made from these beans may be substituted in recipes calling for cow's milk",
+          "value": 500,
+          "airdate": "1987-12-09T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 5333,
+          "answer": "Pesto",
+          "question": "Combine garlic, pine nuts, parmesan cheese & olive oil with basil & presto!  You've got this",
+          "value": 500,
+          "airdate": "1990-06-01T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 7070,
+          "answer": "Ladyfingers",
+          "question": "To make Charlotte Russe, line your mold with these cakes",
+          "value": 500,
+          "airdate": "1990-01-19T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 8423,
+          "answer": "Jordan almond",
+          "question": "Sold plain or in a candy coating, this large almond comes from Spain, not the Middle East",
+          "value": 500,
+          "airdate": "1991-03-20T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 9500,
+          "answer": "Risotto",
+          "question": "From the Italian word for rice, it's a rice dish cooked with broth & often grated cheese",
+          "value": 500,
+          "airdate": "1991-11-15T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 9953,
+          "answer": "tripe",
+          "question": "Popular in Pennsylvania, pepper pot is a peppery soup made from this stomach lining",
+          "value": 500,
+          "airdate": "1993-07-09T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 10593,
+          "answer": "chiles rellenos",
+          "question": "This Mexican specialty translates as \"stuffed peppers\" & that's what they are",
+          "value": 500,
+          "airdate": "1993-02-26T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 12663,
+          "answer": "celery",
+          "question": "The Pascal variety of this crisp garden vegetable has nearly stringless stalks",
+          "value": 500,
+          "airdate": "1994-11-29T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 17790,
+          "answer": "Blackstrap molasses",
+          "question": "Boil cane sugar to get light molasses; boil it again to get dark molasses; a third boil yields this",
+          "value": 500,
+          "airdate": "1997-03-07T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 20342,
+          "answer": "Moussaka",
+          "question": "Some add onions to this Greek dish of eggplant layered with ground meat & covered in Bechamel sauce",
+          "value": 500,
+          "airdate": "1996-10-04T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 34863,
+          "answer": "tater tots",
+          "question": "Oh baby, in 1953 Ore-Ida invented this hash brown product",
+          "value": 500,
+          "airdate": "2000-07-04T12:00:00.000Z",
+          "category_id": 49,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ]
+    ]
+  ],
+  [
+    "Holidays and Observances",
+    "holidays",
+    [
+      [
+        {
+          "id": 4356,
+          "answer": "7",
+          "question": "Palm Sunday occurs this number of days before Easter",
+          "value": 100,
+          "airdate": "1987-11-09T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 5365,
+          "answer": "Columbus Day",
+          "question": "This holiday is also known as Discovery Day",
+          "value": 100,
+          "airdate": "1990-05-23T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 6777,
+          "answer": "Thanksgiving",
+          "question": "This day of prayer & celebration was first decreed by Gov. William Bradford inn 1621",
+          "value": 100,
+          "airdate": "1990-02-09T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 11917,
+          "answer": "Easter eggs",
+          "question": "The Ukranians use a batik process to decorate these fragile holiday items",
+          "value": 100,
+          "airdate": "1993-11-26T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 12967,
+          "answer": "Mother\\'s Day",
+          "question": "Jokingly, this May observance is said to fall nine months after Father's Night",
+          "value": 100,
+          "airdate": "1994-11-07T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 13687,
+          "answer": "Japan",
+          "question": "Autumn brings Choyo-No-Sekku or Chrysanthemum Day in this country",
+          "value": 100,
+          "airdate": "1996-04-04T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 14648,
+          "answer": "Labor Day",
+          "question": "National Grandparents Day is celebrated in September on the first Sunday after this holiday",
+          "value": 100,
+          "airdate": "1995-11-17T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 16689,
+          "answer": "groundhog",
+          "question": "Bears, badgers & this mammal have been known to predict the weather on Candlemas, February 2",
+          "value": 100,
+          "airdate": "1997-04-30T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 22149,
+          "answer": "Valentine\\'s Day",
+          "question": "In 1723, 120 years before Christmas cards, decorated writing paper was sold for lovers to use on this holiday",
+          "value": 100,
+          "airdate": "1998-05-14T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 28746,
+          "answer": "St. Patrick\\'s Day",
+          "question": "Holiday associated with the \"Wearing of the Green\"",
+          "value": 100,
+          "airdate": "1999-06-02T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 47196,
+          "answer": "Easter",
+          "question": "The American Egg Board has declared Egg Salad Week for the week after this holiday",
+          "value": 100,
+          "airdate": "2000-10-09T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "id": 5014,
+          "answer": "Sadie Hawkins Day",
+          "question": "A miss, hoping to be a mrs., might want to observe this November holiday created by Al Capp",
+          "value": 200,
+          "airdate": "1988-11-16T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 5584,
+          "answer": "Chinese calendar",
+          "question": "The New Year's Day of this calendar can fall between our January 20 & February 20",
+          "value": 200,
+          "airdate": "1990-05-14T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 7203,
+          "answer": "St. Valentine\\'s Day",
+          "question": "Day honoring a martyr beheaded at Rome under the Emperor Claudius; a lovely history it wasn't",
+          "value": 200,
+          "airdate": "1990-01-09T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 11923,
+          "answer": "The Fourth of July",
+          "question": "\"I paid 50 cents to see the elephant jump the fence; he jumped so high, he touched the sky and didn't come back til'\" then",
+          "value": 200,
+          "airdate": "1993-11-26T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 12973,
+          "answer": "Christmas",
+          "question": "It's the last federal holiday of the year",
+          "value": 200,
+          "airdate": "1994-11-07T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 13693,
+          "answer": "July 4",
+          "question": "On this date Denmark's Rebild Park holds the largest foreign celebration of American independence",
+          "value": 200,
+          "airdate": "1996-04-04T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 14654,
+          "answer": "Easter",
+          "question": "In 1995 it occurred on April 16th; in 1996 it will occur on April 7th",
+          "value": 200,
+          "airdate": "1995-11-17T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 16695,
+          "answer": "Boston Tea Party",
+          "question": "Every December, Bostonians put on disguises & reenact this 1773 act of defiance",
+          "value": 200,
+          "airdate": "1997-04-30T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 24822,
+          "answer": "Magi/Wise Men",
+          "question": "Among the events Epiphany celebrates is the visit of this trio to Bethlehem",
+          "value": 200,
+          "airdate": "1998-01-09T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 39462,
+          "answer": "World War I",
+          "question": "Originally, Veterans Day was known as Armistice Day, to commemorate the end of this",
+          "value": 200,
+          "airdate": "1999-11-24T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 49626,
+          "answer": "Memorial Day",
+          "question": "One of the first observations of this U.S. holiday was May 30, 1868 on the order of General John Logan",
+          "value": 200,
+          "airdate": "2001-12-03T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 71734,
+          "answer": "Mahatma Gandhi",
+          "question": "In India, flowers & wreaths are brought to the shrine of this spiritual leader on his birthday, October 2",
+          "value": 200,
+          "airdate": "2006-04-17T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 76778,
+          "answer": "the yo-yo",
+          "question": "Rock the baby & loop the loop on June 6, the day reserved for this toy",
+          "value": 200,
+          "airdate": "2007-07-11T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 83558,
+          "answer": "Halloween",
+          "question": "Kids in Somerset, England call pumpkins \"punkies\", & \"Punky Night\" is their version of this celebration",
+          "value": 200,
+          "airdate": "2008-07-15T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 88684,
+          "answer": "Hinduism",
+          "question": "People's usual rankings of caste, gender, status & age are reversed on Holi, a spring festival of this faith",
+          "value": 200,
+          "airdate": "2009-06-05T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 103658,
+          "answer": "Dr. Seuss",
+          "question": "Horton heard that \"Read Across America Day\", March 2, coincides with the birthday of this children's author",
+          "value": 200,
+          "airdate": "2011-04-18T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 110346,
+          "answer": "Labor Day",
+          "question": "In 1887 Oregon became the first state to pass a law recognizing this September holiday",
+          "value": 200,
+          "airdate": "2012-05-01T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 133913,
+          "answer": "Labor Day",
+          "question": "In 1887 Oregon became the first state to pass a law recognizing this September holiday",
+          "value": 200,
+          "airdate": "2012-05-01T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": 3885,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 153654,
+          "answer": "a groundhog",
+          "question": "According to tradition, if this critter sees its shadow on February 2, there will be 6 more weeks of winter",
+          "value": 200,
+          "airdate": "2014-12-01T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": 4738,
+          "invalid_count": null
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "id": 4368,
+          "answer": "October",
+          "question": "United Nations Day falls on the anniversary of its founding, the 24th of this month",
+          "value": 300,
+          "airdate": "1987-11-09T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 5377,
+          "answer": "February & March",
+          "question": "The only 2 months in which Ash Wednesday can occur",
+          "value": 300,
+          "airdate": "1990-05-23T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 6789,
+          "answer": "Easter",
+          "question": "This Christian holiday is also called the Feast of the Resurrection",
+          "value": 300,
+          "airdate": "1990-02-09T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 11929,
+          "answer": "Lent",
+          "question": "In Bulgaria, the week before this 40-day period is Cheese Week; during it, you finish all your cheese",
+          "value": 300,
+          "airdate": "1993-11-26T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 12979,
+          "answer": "Halloween",
+          "question": "It's celebrated the evening before All Saints' Day",
+          "value": 300,
+          "airdate": "1994-11-07T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 13699,
+          "answer": "Slavery",
+          "question": "National Freedom Day, February 1, celebrates the 13th Amendment, which abolished this",
+          "value": 300,
+          "airdate": "1996-04-04T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 14660,
+          "answer": "Boxing Day",
+          "question": "In Canada & Great Britain it's usually the day following Christmas",
+          "value": 300,
+          "airdate": "1995-11-17T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 18439,
+          "answer": "Columbus Day",
+          "question": "New York City was the first to observe it October 12, 1792",
+          "value": 300,
+          "airdate": "1997-02-03T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 24828,
+          "answer": "Mohammed",
+          "question": "In Islam Laylat Al-Miraj commemorates his flight from Mecca to Jerusalem & into heaven",
+          "value": 300,
+          "airdate": "1998-01-09T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 39468,
+          "answer": "Palm Sunday",
+          "question": "Christians observe this holy day to celebrate Jesus' triumphant entry into Jerusalem",
+          "value": 300,
+          "airdate": "1999-11-24T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "id": 5026,
+          "answer": "the landing of the <i>Mayflower</i>",
+          "question": "To commemorate this event, some New Englanders celebrate Forefathers' Day on December 21",
+          "value": 400,
+          "airdate": "1988-11-16T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 5596,
+          "answer": "Father\\'s Day",
+          "question": "The red or white rose is the official flower of this Sunday observance in June",
+          "value": 400,
+          "airdate": "1990-05-14T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 11935,
+          "answer": "Mardi Gras",
+          "question": "Celebration during which you might view the Mystic Krewe of Comos",
+          "value": 400,
+          "airdate": "1993-11-26T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 12985,
+          "answer": "Hannukah",
+          "question": "The name of this 8-day Jewish festival is Hebrew for \"dedication\"",
+          "value": 400,
+          "airdate": "1994-11-07T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 13705,
+          "answer": "Simon Bolivar",
+          "question": "Ecuador & Venezuela observe the birth of this \"George Washington of South America\" each July 24",
+          "value": 400,
+          "airdate": "1996-04-04T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 14666,
+          "answer": "Thanksgiving Day",
+          "question": "In 1789 it became the first U.S. holiday designated by presidential proclamation",
+          "value": 400,
+          "airdate": "1995-11-17T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 16707,
+          "answer": "Rosh Hashanah",
+          "question": "This Jewish holiday that celebrates the new year occurs in the fall before Yom Kippur",
+          "value": 400,
+          "airdate": "1997-04-30T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 22167,
+          "answer": "Columbus Day",
+          "question": "A bill signed in 1968 made it a federal public holiday on the second Monday in October",
+          "value": 400,
+          "airdate": "1998-05-14T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 28764,
+          "answer": "Father\\'s Day",
+          "question": "Although first observed in 1909, it wasn't until 1972 that the third Sunday in June officially became this holiday",
+          "value": 400,
+          "airdate": "1999-06-02T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 47214,
+          "answer": "St. Patrick\\'s Day",
+          "question": "Some churches gave special dispensation for Catholics to eat meat when this fell on a Friday in Lent during 2000",
+          "value": 400,
+          "airdate": "2000-10-09T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 53022,
+          "answer": "Veterans Day",
+          "question": "By an act of Congress, in 1954 Armistice Day was renamed this",
+          "value": 400,
+          "airdate": "2003-04-24T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 73542,
+          "answer": "Christmas",
+          "question": "In Sweden the Julbord is the smorgasbord for this holiday",
+          "value": 400,
+          "airdate": "2006-01-23T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 78374,
+          "answer": "September",
+          "question": "The USA's Constitution Day is observed in this autumn month",
+          "value": 400,
+          "airdate": "2007-04-27T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 84703,
+          "answer": "Yom Kippur",
+          "question": "It's the Jewish Day of Atonement",
+          "value": 400,
+          "airdate": "2008-05-22T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 95111,
+          "answer": "Halloween",
+          "question": "On this holiday, people once placed bowls of food outside their homes to appease ghosts",
+          "value": 400,
+          "airdate": "2010-07-05T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 105734,
+          "answer": "St. John the Baptist (St. Jean Baptiste)",
+          "question": "Quebec's Fete Nationale is June 24, the feast day of this herald of Jesus",
+          "value": 400,
+          "airdate": "2011-01-10T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 119860,
+          "answer": "Veterans Day",
+          "question": "In 1954 Congress changed the name of Armistice Day to this",
+          "value": 400,
+          "airdate": "2012-12-28T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 133919,
+          "answer": "Mohammed",
+          "question": "In Islam Lailat al Miraj celebrates his journey from Mecca to Jerusalem & ascension into heaven",
+          "value": 400,
+          "airdate": "2012-05-01T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": 3885,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 153660,
+          "answer": "George Washington & Abraham Lincoln",
+          "question": "Presidents' Day honors these two presidents in particular, who were both born in February",
+          "value": 400,
+          "airdate": "2014-12-01T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": 4738,
+          "invalid_count": null
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "id": 5032,
+          "answer": "May",
+          "question": "Military bases are often open to the public on Armed Forces Day, the third Saturday of this month",
+          "value": 500,
+          "airdate": "1988-11-16T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 6801,
+          "answer": "Columbus Day",
+          "question": "This holiday was first celebrated in the U.S. in 1792, the 300th anniversary of a historic event",
+          "value": 500,
+          "airdate": "1990-02-09T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 11941,
+          "answer": "St. Anthony",
+          "question": "Lost this saint of Padua's feast day?  It can be found on June 13",
+          "value": 500,
+          "airdate": "1993-11-26T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 12991,
+          "answer": "Bastille Day",
+          "question": "This French holiday that commemorates the storming of a prison is also known as la Fete Nationale",
+          "value": 500,
+          "airdate": "1994-11-07T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 14672,
+          "answer": "Purim",
+          "question": "This Jewish holiday is also known as the Feast of Lots",
+          "value": 500,
+          "airdate": "1995-11-17T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 22173,
+          "answer": "Labor Day",
+          "question": "Matthew Maguire, a machinist, & Peter J. McGuire, a union founder, are credited with creating this holiday",
+          "value": 500,
+          "airdate": "1998-05-14T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 28770,
+          "answer": "Ramadan",
+          "question": "Id Al-Fitr is a day of feasting that ends the fast at the end of this Islamic holy month",
+          "value": 500,
+          "airdate": "1999-06-02T12:00:00.000Z",
+          "category_id": 622,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ]
+    ]
+  ],
+  [
+    "US States",
+    "usStates",
+    [
+      [
+        {
+          "id": 65,
+          "answer": "New York",
+          "question": "The Empire State",
+          "value": 100,
+          "airdate": "1984-12-12T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 1841,
+          "answer": "Rhode Island",
+          "question": "13th to enter the Union, it must have been Providence, or we'd have had a flag with 12 stripes",
+          "value": 100,
+          "airdate": "1985-10-01T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 2317,
+          "answer": "1",
+          "question": "Number of stars on the state flag of Texas",
+          "value": 100,
+          "airdate": "1987-04-06T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 5126,
+          "answer": "Virginia",
+          "question": "The largest U.S. naval base is at Norfolk in this state",
+          "value": 100,
+          "airdate": "1988-11-10T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 6838,
+          "answer": "Massachusetts",
+          "question": "Hey, it's the \"Bay State\"",
+          "value": 100,
+          "airdate": "1990-02-02T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 11260,
+          "answer": "Wisconsin",
+          "question": "This state produces over 30% of the nation's cheese",
+          "value": 100,
+          "airdate": "1992-10-26T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 18128,
+          "answer": "Missouri",
+          "question": "This \"Show-Me State\" has also been called the \"Gateway to the West\"",
+          "value": 100,
+          "airdate": "1997-02-17T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 18668,
+          "answer": "Rhode Island",
+          "question": "Colorado's motto is \"Nothing Without Providence\"; this smallest state's is \"Hope\"",
+          "value": 100,
+          "airdate": "1997-01-21T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 41105,
+          "answer": "New Hampshire",
+          "question": "There's New York, New Jersey, New Mexico & \"New\" this as well",
+          "value": 100,
+          "airdate": "1999-09-08T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 19569,
+          "answer": "Alaska",
+          "question": "Its state sport is dog mushing",
+          "value": 100,
+          "airdate": "1996-12-10T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": 1
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "id": 1847,
+          "answer": "Georgia",
+          "question": "While New York is the Empire State of the north, this is \"The Empire State of the South\"",
+          "value": 200,
+          "airdate": "1985-10-01T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 2323,
+          "answer": "Illinois",
+          "question": "The tallest building in this state is the 110-story Sears Tower",
+          "value": 200,
+          "airdate": "1987-04-06T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 5132,
+          "answer": "Nebraska & Nevada",
+          "question": "The two U.S. states that begin with \"N\" that are neither \"North\" nor \"New\"",
+          "value": 200,
+          "airdate": "1988-11-10T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 9901,
+          "answer": "New Jersey",
+          "question": "The country governments of this \"Garden State\" are called boards of chosen freeholders",
+          "value": 200,
+          "airdate": "1993-07-12T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 16271,
+          "answer": "Minnesota",
+          "question": "With over 15,000 lakes, its lowest point is naturally on a lake, Lake Superior",
+          "value": 200,
+          "airdate": "1997-05-21T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 18431,
+          "answer": "Georgia",
+          "question": "Joel Chandler Harris & Margaret Mitchell were authors native to this state",
+          "value": 200,
+          "airdate": "1997-02-03T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 19575,
+          "answer": "Wyoming",
+          "question": "This state's largest lake is Yellowstone Lake in the northwest",
+          "value": 200,
+          "airdate": "1996-12-10T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 41111,
+          "answer": "Oregon",
+          "question": "Its capital is Salem, but its largest city is Portland",
+          "value": 200,
+          "airdate": "1999-09-08T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 59589,
+          "answer": "Louisiana",
+          "question": "Do the wild fais-do-do in this state while motoring on Interstate 10 to Baton Rouge or Ponchatoula",
+          "value": 200,
+          "airdate": "2004-05-10T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 101224,
+          "answer": "North Dakota",
+          "question": "Bismarck is the second-largest city in this state",
+          "value": 200,
+          "airdate": "2009-09-22T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "id": 77,
+          "answer": "Arizona",
+          "question": "Only U.S. state with a \"Z\" in its name",
+          "value": 300,
+          "airdate": "1984-12-12T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 1853,
+          "answer": "Ohio",
+          "question": "The geographic center of this state is Delaware, 25 miles north of Columbus",
+          "value": 300,
+          "airdate": "1985-10-01T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 2329,
+          "answer": "Virginia",
+          "question": "In the 1790 census, this state had the most people, a few of whom didn't go on to be president",
+          "value": 300,
+          "airdate": "1987-04-06T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 5138,
+          "answer": "Oklahoma",
+          "question": "Among its 77 counties are Creek, Cherokee, Choctaw, Seminole & Osage",
+          "value": 300,
+          "airdate": "1988-11-10T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 6850,
+          "answer": "Utah",
+          "question": "In 1947 British driver John Cobb was 1st to travel over 400 MPH on this state's salt beds",
+          "value": 300,
+          "airdate": "1990-02-02T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 11272,
+          "answer": "Nebraska",
+          "question": "This \"Cornhusker\" State's name comes from an Indian word for \"flat water\", a reference to the Platte River",
+          "value": 300,
+          "airdate": "1992-10-26T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 18437,
+          "answer": "Delaware",
+          "question": "Its name was first associated with a lord, then a river, a tribe & the first state",
+          "value": 300,
+          "airdate": "1997-02-03T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 19581,
+          "answer": "Iowa",
+          "question": "It's known as \"The Land Where the Tall Corn Grows\"",
+          "value": 300,
+          "airdate": "1996-12-10T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 50540,
+          "answer": "Minnesota",
+          "question": "This state's name comes from the Sioux for \"sky-tinted waters\", which probably refers to its 10,000 lakes",
+          "value": 300,
+          "airdate": "2001-10-08T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "id": 169,
+          "answer": "Arkansas",
+          "question": "Western neighbor of Tenn. & Miss.; it has only diamond field in N. America",
+          "value": 400,
+          "airdate": "1984-12-07T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 2245,
+          "answer": "Missouri",
+          "question": "Mark Twain said he was born in this state because \"it was an unknown new state & needed attractions\"",
+          "value": 400,
+          "airdate": "1987-04-22T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 3954,
+          "answer": "North Carolina",
+          "question": "This state produces more tobacco products than all other U.S. states combined",
+          "value": 400,
+          "airdate": "1988-01-13T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 6856,
+          "answer": "California",
+          "question": "It contains both the highest & lowest points in the lower 48 states",
+          "value": 400,
+          "airdate": "1990-02-02T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 11278,
+          "answer": "Maine",
+          "question": "This \"Down East\" state is bordered by only 1 state & 2 provinces",
+          "value": 400,
+          "airdate": "1992-10-26T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 18146,
+          "answer": "Nevada",
+          "question": "Laughlin is this state's southernmost city",
+          "value": 400,
+          "airdate": "1997-02-17T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 19587,
+          "answer": "Texas",
+          "question": "One of its oldest universities is named for Robert Baylor, who helped craft its state constitution",
+          "value": 400,
+          "airdate": "1996-12-10T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 41123,
+          "answer": "Florida",
+          "question": "Ponce de Leon searched for the Fountain of Youth in this \"Sunshine\" state",
+          "value": 400,
+          "airdate": "1999-09-08T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 59595,
+          "answer": "Louisiana",
+          "question": "It's the only U.S. state named for a French king",
+          "value": 400,
+          "airdate": "2004-05-10T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 101230,
+          "answer": "Vermont",
+          "question": "Its dairy industry is the largest in New England",
+          "value": 400,
+          "airdate": "2009-09-22T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "id": 89,
+          "answer": "South Carolina",
+          "question": "8th state of the Union, it was the 1st state to secede",
+          "value": 500,
+          "airdate": "1984-12-12T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 1865,
+          "answer": "Maryland",
+          "question": "Francis Scott Key didn't have to leave this, his home state, to spend the night near Ft. McHenry",
+          "value": 500,
+          "airdate": "1985-10-01T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 2341,
+          "answer": "Tennessee",
+          "question": "The World Book lists 5 state songs for it, including, \"Rocky Top\"",
+          "value": 500,
+          "airdate": "1987-04-06T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 6770,
+          "answer": "Pennsylvania",
+          "question": "Classified as a Mid-Atlantic state, this state doesn't touch an ocean, but it does border Lake Erie",
+          "value": 500,
+          "airdate": "1990-02-13T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 11284,
+          "answer": "Alabama",
+          "question": "The pecan is the state nut not of Georgia, but of this neighbor to the west",
+          "value": 500,
+          "airdate": "1992-10-26T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 18449,
+          "answer": "Maine",
+          "question": "The first French settlers in this Pine Tree State brought their own wood to build houses",
+          "value": 500,
+          "airdate": "1997-02-03T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 19593,
+          "answer": "West Virginia (\"Mountaineers are Always Free\")",
+          "question": "In Latin its state motto is \"Montani Semper Liberi\"",
+          "value": 500,
+          "airdate": "1996-12-10T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ],
+      [
+        {
+          "id": 41129,
+          "answer": "California",
+          "question": "Points of interest in this state include the San Joaquin Valley & the Sacramento River",
+          "value": 500,
+          "airdate": "1999-09-08T12:00:00.000Z",
+          "category_id": 17,
+          "game_id": null,
+          "invalid_count": null
+        }
+      ]
+    ]
+  ]
+]

@@ -33,6 +33,7 @@ let cQuestion;
 let perCorrect;
 let currentVal;
 let currentPoint;
+let currentParent;
 
 let score = 0;
 
@@ -246,13 +247,15 @@ $(document).on("click", ".num", function () {
   //but am too lazy to change the rest of the code
   const numVal = $(this).val();
   const point = $(this).text();
+  const parent = $(this).attr("parent");
+  currentParent = parent;
   currentPoint = point;
   currentVal = numVal;
   //When button clicked, give the player a random question to answer with that val
-  assignQ(numVal, point);
+  assignQ(numVal, point, parent);
 });
 
-function assignQ(value, point) {
+function assignQ(value, point, par) {
   if (eval(value).length != 0) {
     const randomNum = Math.floor(Math.random() * eval(value).length);
     emptyGame();
@@ -287,6 +290,8 @@ function assignQ(value, point) {
 
     eval(value).splice(randomNum, 1);
   } else {
+    //delete the array using attr parent
+    console.log(eval(par)[1 + eval(point)/100])
     loadCats();
   }
 }
@@ -308,18 +313,37 @@ $(document).on("keypress", ".user-answer", function (e) {
         " Persentage Correct: " +
         perCorrect
     );
-
-    if (perCorrect >= 0.692) {
-      $(".user-answer").attr("id", "cor");
-      score += eval($(this).attr("point"));
-      $(".score").text("Score: " + score);
+    if (
+      cAnswer
+        .toLowerCase()
+        .replace(/(\((.*?)\))/g, "")
+        .replace(/(\<(.*?)\>)/g, "").length > 6
+    ) {
+      if (perCorrect >= 0.692) {
+        $(".user-answer").attr("id", "cor");
+        score += eval($(this).attr("point"));
+        $(".score").text("Score: " + score);
+      } else {
+        $(".user-answer").attr("id", "incor");
+        score -= eval($(this).attr("point"));
+        $(".score").text("Score: " + score);
+        gameFrame.append(
+          `<span id="user-span">Correct Answer is: ${cAnswer}<br></span>`
+        );
+      }
     } else {
-      $(".user-answer").attr("id", "incor");
-      score -= eval($(this).attr("point"));
-      $(".score").text("Score: " + score);
-      gameFrame.append(
-        `<span id="user-span">Correct Answer is: ${cAnswer}<br></span>`
-      );
+      if (perCorrect >= 0.8) {
+        $(".user-answer").attr("id", "cor");
+        score += eval($(this).attr("point"));
+        $(".score").text("Score: " + score);
+      } else {
+        $(".user-answer").attr("id", "incor");
+        score -= eval($(this).attr("point"));
+        $(".score").text("Score: " + score);
+        gameFrame.append(
+          `<span id="user-span">Correct Answer is: ${cAnswer}<br></span>`
+        );
+      }
     }
 
     function similarity(s1, s2) {
@@ -340,8 +364,10 @@ $(document).on("keypress", ".user-answer", function (e) {
     }
 
     function editDistance(s1, s2) {
-      s1 = s1.toLowerCase();
-      s2 = s2.toLowerCase();
+      s1 = s1.toLowerCase().replace(/(\((.*?)\))/g, "");
+      s1 = s1.replace(/(\<(.*?)\>)/g, "");
+      s2 = s2.toLowerCase().replace(/(\((.*?)\))/g, "");
+      s2 = s2.replace(/(\<(.*?)\>)/g, "");
 
       var costs = new Array();
       for (var i = 0; i <= s1.length; i++) {
@@ -367,11 +393,11 @@ $(document).on("keypress", ".user-answer", function (e) {
 });
 
 $(document).on("click", ".next", function () {
-  assignQ(currentVal, currentPoint);
+  assignQ(currentVal, currentPoint, );
 });
 $(document).on("keypress", ".next", function (e) {
   if (e.which == 13) {
-    assignQ(currentVal, currentPoint);
+    assignQ(currentVal, currentPoint, );
   }
 });
 $(document).on("click", ".back", function () {
@@ -387,9 +413,11 @@ function loadCats() {
   emptyGame();
   $(".score").text("Score: " + score);
   for (let i = 0; i < cats.length; i++) {
-    newBtn = $(
-      `<button class='cat-btn cat' value='${cats[i][1]}'>${cats[i][0]}</button>`
-    );
-    gameFrame.append(newBtn);
+    if (cats[i].length != 2) {
+      newBtn = $(
+        `<button class='cat-btn cat' value='${cats[i][1]}'>${cats[i][0]}</button>`
+      );
+      gameFrame.append(newBtn);
+    }
   }
 }
