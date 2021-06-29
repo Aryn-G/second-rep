@@ -51,7 +51,7 @@ $(".play").on("click", function () {
 
   $.ajax({
     //FOOD
-    url: "http://jservice.io/api/category?id=49",
+    url: "https://jservice.io/api/category?id=49",
     method: "GET",
   }).then(function (res1) {
     const clueArr = res1.clues;
