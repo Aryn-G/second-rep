@@ -2,31 +2,26 @@ const cats = [];
 
 //
 const foods = [];
+const holidays = [];
+const usStates = [];
 
 const food1 = [];
 const food2 = [];
 const food3 = [];
 const food4 = [];
 const food5 = [];
-// const food10 = [];
-
-const holidays = [];
 
 const holi1 = [];
 const holi2 = [];
 const holi3 = [];
 const holi4 = [];
 const holi5 = [];
-// const holi10 = [];
-
-const usStates = [];
 
 const state1 = [];
 const state2 = [];
 const state3 = [];
 const state4 = [];
 const state5 = [];
-// const state10 = [];
 
 let cAnswer;
 let cQuestion;
@@ -41,7 +36,13 @@ const gameFrame = $("#main-game");
 
 function emptyGame() {
   //want to start string transition
+  gameFrame.toggleClass("anim")
+  setTimeout(temp, 2000)
   $("#main-game").empty();
+  function temp() {
+    gameFrame.toggleClass("anim")
+    return true;
+  }
 }
 $(".play").on("click", function () {
   $(".play").empty().append(`<img src="./images/loading.gif"/>`);
@@ -204,6 +205,7 @@ $(document).on("click", ".cat", function () {
   emptyGame();
   var temp = 100;
   var temp1 = 1;
+
   gameFrame.append(`<h1>${catText}</h1>`);
 
   if (catVal == "holidays") {
@@ -291,7 +293,6 @@ function assignQ(value, point, par) {
     eval(value).splice(randomNum, 1);
   } else {
     //delete the array using attr parent
-    console.log(eval(par)[1 + eval(point)/100])
     loadCats();
   }
 }
@@ -393,11 +394,11 @@ $(document).on("keypress", ".user-answer", function (e) {
 });
 
 $(document).on("click", ".next", function () {
-  assignQ(currentVal, currentPoint, );
+  assignQ(currentVal, currentPoint, currentParent);
 });
 $(document).on("keypress", ".next", function (e) {
   if (e.which == 13) {
-    assignQ(currentVal, currentPoint, );
+    assignQ(currentVal, currentPoint, currentParent);
   }
 });
 $(document).on("click", ".back", function () {
@@ -409,15 +410,53 @@ $(document).on("keypress", ".back", function (e) {
   }
 });
 
+function checkForEmpty() {
+  if (
+    food1.length == 0 &&
+    food2.length == 0 &&
+    food3.length == 0 &&
+    food4.length == 0 &&
+    food5.length == 0 &&
+    holi1.length == 0 &&
+    holi2.length == 0 &&
+    holi3.length == 0 &&
+    holi4.length == 0 &&
+    holi5.length == 0 &&
+    state1.length == 0 &&
+    state2.length == 0 &&
+    state3.length == 0 &&
+    state4.length == 0 &&
+    state5.length == 0
+  ) {
+    noMoreCats()
+  }
+}
+
 function loadCats() {
   emptyGame();
   $(".score").text("Score: " + score);
+  checkForEmpty()
   for (let i = 0; i < cats.length; i++) {
     if (cats[i].length != 2) {
-      newBtn = $(
-        `<button class='cat-btn cat' value='${cats[i][1]}'>${cats[i][0]}</button>`
-      );
-      gameFrame.append(newBtn);
+      let empty = 0;
+      for (let j = 2; j < cats[i].length; j++) {
+        if (cats[i][j].length == 0) {
+          empty++;
+        }
+      }
+      if (empty != 5) {
+        newBtn = $(
+          `<button class='cat-btn cat' value='${cats[i][1]}'>${cats[i][0]}</button>`
+        );
+        gameFrame.append(newBtn);
+      }
     }
   }
+}
+
+function noMoreCats() {
+  $(".score").text("");
+  // hide the text
+  emptyGame();
+  gameFrame.append("<h1> You finished! \n Final Score: " + score + "</h1>");
 }

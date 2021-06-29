@@ -16,7 +16,7 @@ body {
 }
 
 /* #main-game {
-  overflow: hidden;
+  background: #e5f9e0;
   display: inline-block;
   margin-top: 1%;
   width: 80%;
@@ -25,53 +25,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: relative;
-  z-index: 1;
-}
-
-#main-game::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #e5f9e0;
   border-radius: 1rem;
-  z-index: -2;
-}
-
-#main-game::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: -120%;
-  width: 110%;
-  height: 100%;
-  background-color: #2f9c95;
-  transition: all 1.5s;
-  border-radius: 1rem;
-  z-index: 1;
-  transform: skewX(-10deg) translate(-10px, 0px);
-}
-
-
-#main-game:hover::before {
-  left: 120%;
 } */
-
-#main-game {
-  background: #e5f9e0;
-  display: inline-block;
-  margin-top: 1%;
-  width: 80%;
-  height: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 1rem;
-}
 
 .cat-btn {
   font-weight: bolder;
@@ -153,7 +108,7 @@ h1 {
   height: auto;
   font-size: 38px;
 }
-.next, 
+.next,
 .back {
   width: 250px;
   height: 75px;
@@ -166,4 +121,55 @@ button:focus {
 
 .score {
   margin-top: 10px;
+}
+
+#main-game {
+  overflow: hidden;
+  display: inline-block;
+  margin-top: 1%;
+  width: 80%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+#main-game::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #e5f9e0;
+  border-radius: 1rem;
+  z-index: -2;
+}
+
+.anim::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -120%;
+  width: 110%;
+  height: 100%;
+  background-color: #2f9c95;
+  transition: all 1.5s;
+  border-radius: 1rem;
+  z-index: 1;
+  transform: skewX(-10deg) translate(-10px, 0px);
+  animation-duration: 2s;
+  animation-name: anim;
+}
+
+@keyframes anim {
+  0% {
+    left: -120%;
+  }
+  100% {
+    left: 120%;
+  }
 }
