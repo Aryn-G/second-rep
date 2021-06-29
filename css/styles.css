@@ -162,10 +162,10 @@ button:focus {
   z-index: 1;
   transform: skewX(-10deg) translate(-10px, 0px);
   animation-duration: 2s;
-  animation-name: anim;
+  animation-name: animStart;
 }
 
-@keyframes anim {
+@keyframes animStart {
   0% {
     left: -120%;
   }

@@ -36,14 +36,15 @@ const gameFrame = $("#main-game");
 
 function emptyGame() {
   //want to start string transition
-  gameFrame.toggleClass("anim")
-  setTimeout(temp, 2000)
+
   $("#main-game").empty();
-  function temp() {
-    gameFrame.toggleClass("anim")
-    return true;
-  }
 }
+// gameFrame.toggleClass("anim");
+// setTimeout(temp, 2000);
+// function temp() {
+//   gameFrame.toggleClass("anim");
+// }
+
 $(".play").on("click", function () {
   $(".play").empty().append(`<img src="./images/loading.gif"/>`);
   $(".play").prop("disabled", "disabled");
@@ -428,14 +429,14 @@ function checkForEmpty() {
     state4.length == 0 &&
     state5.length == 0
   ) {
-    noMoreCats()
+    noMoreCats();
   }
 }
 
 function loadCats() {
   emptyGame();
   $(".score").text("Score: " + score);
-  checkForEmpty()
+  checkForEmpty();
   for (let i = 0; i < cats.length; i++) {
     if (cats[i].length != 2) {
       let empty = 0;
