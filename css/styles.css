@@ -126,7 +126,7 @@ h1 {
   left: 0;
 }
 .back::after {
-  content: "←";
+  content: "<";
 }
 
 button:focus {
@@ -254,7 +254,7 @@ button:focus {
     height: 50px;
   }
   .next::after {
-    content: "→";
+    content: ">";
   }
   .back {
     width: 50px;
