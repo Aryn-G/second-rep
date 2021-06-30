@@ -226,6 +226,15 @@ button:focus {
     height: 50px;
     font-size: 28px;
   }
+  #cor {
+    background: #7fffaa;
+    color: white;
+  }
+  
+  #incor {
+    background: #ff7f7f;
+    color: white;
+  }
 }
 
 @media only screen and (max-width: 790px) {
@@ -267,6 +276,15 @@ button:focus {
     height: 50px;
     font-size: 28px;
   }
+  #cor {
+    background: #7fffaa;
+    color: white;
+  }
+  
+  #incor {
+    background: #ff7f7f;
+    color: white;
+  }
 }
 
 @media only screen and (max-width: 520px) {
@@ -304,6 +322,15 @@ button:focus {
     height: 50px;
     font-size: 20px;
   }
+  #cor {
+    background: #7fffaa;
+    color: white;
+  }
+  
+  #incor {
+    background: #ff7f7f;
+    color: white;
+  }
 }
 
 @media only screen and (max-width: 376px) {
@@ -338,6 +365,15 @@ button:focus {
     height: 50px;
     font-size: 15px;
   }
+  #cor {
+    background: #7fffaa;
+    color: white;
+  }
+  
+  #incor {
+    background: #ff7f7f;
+    color: white;
+  }
 }
 
 @media only screen and (max-width: 305px) {
@@ -368,6 +404,15 @@ button:focus {
     width: 200px;
     height: 40px;
     font-size: 15px;
+  }
+  #cor {
+    background: #7fffaa;
+    color: white;
+  }
+  
+  #incor {
+    background: #ff7f7f;
+    color: white;
   }
 }
 
@@ -404,6 +449,15 @@ button:focus {
     height: 40px;
     font-size: 15px;
   }
+  #cor {
+    background: #7fffaa;
+    color: white;
+  }
+  
+  #incor {
+    background: #ff7f7f;
+    color: white;
+  }
 }
 
 @media only screen and (max-width: 219px) {
@@ -438,5 +492,14 @@ button:focus {
     width: 100px;
     height: 20px;
     font-size: 8px;
+  }
+  #cor {
+    background: #7fffaa;
+    color: white;
+  }
+  
+  #incor {
+    background: #ff7f7f;
+    color: white;
   }
 }
