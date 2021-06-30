@@ -314,6 +314,7 @@ function checkForEmpty() {
 }
 
 function loadCats() {
+  let submited = 0;
   emptyGame("no");
   $(".score").text("Score: " + score);
   checkForEmpty();
@@ -437,6 +438,7 @@ function submit() {
 }
 
 function loadNums(val) {
+  let submited = 0;
   emptyGame();
   gameFrame.append(`<h1>${catText}</h1>`);
   prevPage = "loadCats()"
