@@ -253,8 +253,9 @@ function assignQ(value, point, par) {
           <button class="cat-btn next"></button>
       </div>`
     );
+    $(".user-answer").focus();
 
-    eval(value).splice(randomNum, 1);
+    
   } else {
     //delete the array using attr parent
     loadCats();
@@ -346,6 +347,7 @@ function submit() {
   $(".user-answer").val(userAnswer);
   $(".user-answer").prop("disabled", "disabled");
   $(".next").focus();
+  eval(currentVal).splice(randomNum, 1);
 
   perCorrect = similarity(cAnswer, userAnswer);
 
