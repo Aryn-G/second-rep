@@ -281,12 +281,12 @@ function assignQ(value, point, par) {
         <div id="input-cont">
           <br />
           <button class="cat-btn back">
-            Back
+          
           </button>
       
           <input class="user-answer" type="text" point="${point}" autofocus></input>
           <button class="cat-btn next">
-            Next
+          
           </button>
       </div>`
     );

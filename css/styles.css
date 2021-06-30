@@ -4,8 +4,9 @@
 }
 
 body {
-  width: 90vw;
-  height: 90vh;
+  margin: 0px;
+  width: 100vw;
+  height: 92vh ;
   background-color: #a3f7b5;
 }
 #body {
@@ -113,6 +114,12 @@ h1 {
   width: 250px;
   height: 75px;
 }
+.next::after {
+  content: "Next";
+}
+.back::after {
+  content: "Back";
+}
 
 button:focus {
   outline: none;
@@ -149,7 +156,7 @@ button:focus {
   z-index: -2;
 }
 
-.anim::before {
+/* .anim::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -172,4 +179,175 @@ button:focus {
   100% {
     left: 120%;
   }
+} */
+
+@media only screen and (max-width: 1450px) {
+  #main-game {
+    margin-top: 0;
+    width: 100%;
+  }
+  #main-game::after {
+    margin-top: 0;
+    border-radius: 0rem;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1044px) {
+  .cat-btn {
+    font-size: 30px;
+    width: 375px;
+    height: 75px;
+  }
+  .play img {
+    width: 75px;
+    height: 75px;
+  }
+  .next,
+  .back {
+    width: 185px;
+    height: 50px;
+  }
+
+  .user-answer {
+    letter-spacing: 0.2rem;
+    width: 375px;
+    height: 50px;
+    font-size: 28px;
+  }
+  
+}
+
+@media only screen and (max-width: 790px) {
+
+  h1 {
+    font-size: 30px;
+  }
+
+  #user-span {
+    letter-spacing: 0.2rem;
+    font-size: 28px;
+  }
+
+  .cat-btn {
+    font-size: 30px;
+    width: 375px;
+    height: 75px;
+  }
+  .play img {
+    width: 75px;
+    height: 75px;
+  }
+  .next,
+  .back {
+    font-size: 38px;
+    border-radius: 5rem;
+    width: 50px;
+    height: 50px;
+  }
+  .next #text, 
+  .back #text {
+    opacity: 0;
+  }
+  .next::after {
+    opacity: 1;
+    content: "→";
+  }
+  .back::after {
+    opacity: 1;
+    content: "←";
+  }
+
+
+  .user-answer {
+    letter-spacing: 0.2rem;
+    width: 375px;
+    height: 50px;
+    font-size: 28px;
+  }
+  
+}
+
+@media only screen and (max-width: 520px) {
+
+  h1 {
+    font-size: 25px;
+  }
+
+  #user-span {
+    letter-spacing: 0.2rem;
+    font-size: 20px;
+  }
+
+  .cat-btn {
+    font-size: 25px;
+    width: 375px;
+    height: 75px;
+  }
+  .play img {
+    width: 75px;
+    height: 75px;
+  }
+  .next,
+  .back {
+    font-size: 38px;
+    border-radius: 5rem;
+    width: 50px;
+    height: 50px;
+  }
+
+  .user-answer {
+    letter-spacing: 0.2rem;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+  }
+  
+}
+
+@media only screen and (max-width: 376px) {
+
+  h1 {
+    font-size: 20px;
+  }
+
+  #user-span {
+    letter-spacing: 0.2rem;
+    font-size: 15px;
+  }
+
+  .cat-btn {
+    font-size: 20px;
+    width: 275px;
+    height: 50px;
+  }
+  .play img {
+    width: 50px;
+    height: 50px;
+  }
+  .next,
+  .back {
+    position:relative;
+    font-size: 30px;
+    border-radius: 5rem;
+    width: 50px;
+    height: 50px;
+  }
+
+  .next {
+    top: 60px;
+    right: 60px;
+  }
+  .back {
+    top: 60px;
+    left: 60px;
+  }
+
+  .user-answer {
+    letter-spacing: 0.2rem;
+    width: 225px;
+    height: 50px;
+    font-size: 15px;
+  }
+  
 }
