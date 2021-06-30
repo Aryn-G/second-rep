@@ -6,7 +6,7 @@
 body {
   margin: 0px;
   width: 100vw;
-  height: 92vh ;
+  height: 92vh;
   background-color: #a3f7b5;
 }
 #body {
@@ -109,16 +109,24 @@ h1 {
   height: auto;
   font-size: 38px;
 }
-.next,
-.back {
+.next {
   width: 250px;
   height: 75px;
 }
 .next::after {
   content: "Next";
 }
+.back {
+  z-index: 5;
+  width: 75px;
+  height: 75px;
+  border-radius: 5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .back::after {
-  content: "Back";
+  content: "←";
 }
 
 button:focus {
@@ -203,9 +211,12 @@ button:focus {
     width: 75px;
     height: 75px;
   }
-  .next,
-  .back {
+  .next {
     width: 185px;
+    height: 50px;
+  }
+  .back {
+    width: 50px;
     height: 50px;
   }
 
@@ -215,11 +226,9 @@ button:focus {
     height: 50px;
     font-size: 28px;
   }
-  
 }
 
 @media only screen and (max-width: 790px) {
-
   h1 {
     font-size: 30px;
   }
@@ -238,26 +247,19 @@ button:focus {
     width: 75px;
     height: 75px;
   }
-  .next,
-  .back {
+  .next {
     font-size: 38px;
     border-radius: 5rem;
     width: 50px;
     height: 50px;
   }
-  .next #text, 
-  .back #text {
-    opacity: 0;
-  }
   .next::after {
-    opacity: 1;
     content: "→";
   }
-  .back::after {
-    opacity: 1;
-    content: "←";
+  .back {
+    width: 50px;
+    height: 50px;
   }
-
 
   .user-answer {
     letter-spacing: 0.2rem;
@@ -265,11 +267,9 @@ button:focus {
     height: 50px;
     font-size: 28px;
   }
-  
 }
 
 @media only screen and (max-width: 520px) {
-
   h1 {
     font-size: 25px;
   }
@@ -288,25 +288,25 @@ button:focus {
     width: 75px;
     height: 75px;
   }
-  .next,
-  .back {
+  .next {
     font-size: 38px;
     border-radius: 5rem;
     width: 50px;
     height: 50px;
   }
-
+  .back {
+    width: 50px;
+    height: 50px;
+  }
   .user-answer {
     letter-spacing: 0.2rem;
     width: 200px;
     height: 50px;
     font-size: 20px;
   }
-  
 }
 
 @media only screen and (max-width: 376px) {
-
   h1 {
     font-size: 20px;
   }
@@ -327,27 +327,116 @@ button:focus {
   }
   .next,
   .back {
-    position:relative;
     font-size: 30px;
     border-radius: 5rem;
     width: 50px;
     height: 50px;
   }
-
-  .next {
-    top: 60px;
-    right: 60px;
-  }
-  .back {
-    top: 60px;
-    left: 60px;
-  }
-
   .user-answer {
     letter-spacing: 0.2rem;
     width: 225px;
     height: 50px;
     font-size: 15px;
   }
-  
+}
+
+@media only screen and (max-width: 305px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  #user-span {
+    letter-spacing: 0.15rem;
+    font-size: 15px;
+  }
+
+  .cat-btn {
+    font-size: 20px;
+    width: 275px;
+    height: 50px;
+  }
+  .next,
+  .back {
+    font-size: 30px;
+    border-radius: 5rem;
+    width: 40px;
+    height: 40px;
+  }
+
+  .user-answer {
+    letter-spacing: 0.15rem;
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 269px) {
+  h1 {
+    font-size: 15px;
+  }
+  #user-span {
+    text-align: center;
+    letter-spacing: 0.1rem;
+    font-size: 15px;
+  }
+
+  .cat-btn {
+    font-size: 15px;
+    width: 200px;
+    height: 50px;
+  }
+  .next,
+  .back {
+    font-size: 25px;
+    border-radius: 5rem;
+    width: 40px;
+    height: 40px;
+  }
+  .next {
+   margin: 0;
+  }
+
+  .user-answer {
+    margin: 0;
+    letter-spacing: 0.1rem;
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 219px) {
+  .cat-btn {
+    font-size: 8px;
+    width: 150px;
+    height: 35px;
+  }
+  #user-span {
+    text-align: center;
+    letter-spacing: 0.05rem;
+    font-size: 8px;
+  }
+  .play img {
+    width: 35px;
+    height: 35px;
+  }
+  .next,
+  .back {
+    font-size: 8px;
+    border-radius: 5rem;
+    width: 20px;
+    height: 20px;
+  }
+  .next {
+    margin-left: none;
+  }
+
+  .user-answer {
+    margin-right: none;
+    letter-spacing: 0.05rem;
+    width: 100px;
+    height: 20px;
+    font-size: 8px;
+  }
 }

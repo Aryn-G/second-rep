@@ -32,12 +32,17 @@ let currentParent;
 
 let score = 0;
 
+let prevPage;
+
 const gameFrame = $("#main-game");
 
-function emptyGame() {
+function emptyGame(no) {
   //want to start string transition
 
   $("#main-game").empty();
+  if (no != "no") {
+    gameFrame.append(`<button class="cat-btn back"></button>`);
+  }
 }
 // gameFrame.toggleClass("anim");
 // setTimeout(temp, 2000);
@@ -193,57 +198,20 @@ $(".play").on("click", function () {
     });
   });
 });
-
+let catVal;
+let catText;
 $(document).on("click", ".cat", function () {
   //When clicking on a Category
   //want to display buttons from 100 to 500 and 100
   //get this.val and check if it matches with on of the category names
   // foods, holidays, and usState
 
-  const catVal = $(this).val();
-  const catText = $(this).text();
-  console.log(catVal);
-  emptyGame();
-  var temp = 100;
-  var temp1 = 1;
-
-  gameFrame.append(`<h1>${catText}</h1>`);
-
-  if (catVal == "holidays") {
-    for (let i = 2; i < holidays.length; i++) {
-      newNumBtn = $(
-        `<button class='cat-btn num' value='holi${temp1}' parent="holidays">${temp}</button>`
-      );
-      if (eval(`holi${temp1}`).length != 0) {
-        gameFrame.append(newNumBtn);
-      }
-      temp += 100;
-      temp1++;
-    }
-  } else if (catVal == "usStates") {
-    for (let i = 2; i < usStates.length; i++) {
-      newNumBtn = $(
-        `<button class='cat-btn num' value='state${temp1}' parent="usState">${temp}</button>`
-      );
-      if (eval(`state${temp1}`).length != 0) {
-        gameFrame.append(newNumBtn);
-      }
-      temp += 100;
-      temp1++;
-    }
-  } else if (catVal == "foods") {
-    for (let i = 2; i < foods.length; i++) {
-      newNumBtn = $(
-        `<button class='cat-btn num' value='food${temp1}' parent="foods">${temp}</button>`
-      );
-      if (eval(`food${temp1}`).length != 0) {
-        gameFrame.append(newNumBtn);
-      }
-      temp += 100;
-      temp1++;
-    }
-  }
+  catVal = $(this).val();
+  catText = $(this).text();
+  loadNums(catVal);
+  prevPage = "loadCats()";
 });
+
 
 $(document).on("click", ".num", function () {
   //just learned about eval("var name")
@@ -254,6 +222,8 @@ $(document).on("click", ".num", function () {
   currentParent = parent;
   currentPoint = point;
   currentVal = numVal;
+
+  prevPage = "loadNums(catVal)";
   //When button clicked, give the player a random question to answer with that val
   assignQ(numVal, point, parent);
 });
@@ -277,17 +247,10 @@ function assignQ(value, point, par) {
         <span id="user-span">
           What Is: 
         </span>
-
         <div id="input-cont">
           <br />
-          <button class="cat-btn back">
-          
-          </button>
-      
           <input class="user-answer" type="text" point="${point}" autofocus></input>
-          <button class="cat-btn next">
-          
-          </button>
+          <button class="cat-btn next"></button>
       </div>`
     );
 
@@ -297,117 +260,33 @@ function assignQ(value, point, par) {
     loadCats();
   }
 }
-
+let submited = 0;
 $(document).on("keypress", ".user-answer", function (e) {
-  if (e.which == 13) {
-    userAnswer = $(".user-answer").val();
-    $(".user-answer").val(userAnswer);
-    $(".user-answer").prop("disabled", "disabled");
-    $(".next").focus();
-
-    perCorrect = similarity(cAnswer, userAnswer);
-
-    console.log(
-      "A: " +
-        cAnswer +
-        " You Put: " +
-        userAnswer +
-        " Persentage Correct: " +
-        perCorrect
-    );
-    if (
-      cAnswer
-        .toLowerCase()
-        .replace(/(\((.*?)\))/g, "")
-        .replace(/(\<(.*?)\>)/g, "").length > 6
-    ) {
-      if (perCorrect >= 0.692) {
-        $(".user-answer").attr("id", "cor");
-        score += eval($(this).attr("point"));
-        $(".score").text("Score: " + score);
-      } else {
-        $(".user-answer").attr("id", "incor");
-        score -= eval($(this).attr("point"));
-        $(".score").text("Score: " + score);
-        gameFrame.append(
-          `<span id="user-span">Correct Answer is: ${cAnswer}<br></span>`
-        );
-      }
-    } else {
-      if (perCorrect >= 0.8) {
-        $(".user-answer").attr("id", "cor");
-        score += eval($(this).attr("point"));
-        $(".score").text("Score: " + score);
-      } else {
-        $(".user-answer").attr("id", "incor");
-        score -= eval($(this).attr("point"));
-        $(".score").text("Score: " + score);
-        gameFrame.append(
-          `<span id="user-span">Correct Answer is: ${cAnswer}<br></span>`
-        );
-      }
-    }
-
-    function similarity(s1, s2) {
-      var longer = s1;
-      var shorter = s2;
-      if (s1.length < s2.length) {
-        longer = s2;
-        shorter = s1;
-      }
-      var longerLength = longer.length;
-      if (longerLength == 0) {
-        return 1.0;
-      }
-      return (
-        (longerLength - editDistance(longer, shorter)) /
-        parseFloat(longerLength)
-      );
-    }
-
-    function editDistance(s1, s2) {
-      s1 = s1.toLowerCase().replace(/(\((.*?)\))/g, "");
-      s1 = s1.replace(/(\<(.*?)\>)/g, "");
-      s2 = s2.toLowerCase().replace(/(\((.*?)\))/g, "");
-      s2 = s2.replace(/(\<(.*?)\>)/g, "");
-
-      var costs = new Array();
-      for (var i = 0; i <= s1.length; i++) {
-        var lastValue = i;
-        for (var j = 0; j <= s2.length; j++) {
-          if (i == 0) costs[j] = j;
-          else {
-            if (j > 0) {
-              var newValue = costs[j - 1];
-              if (s1.charAt(i - 1) != s2.charAt(j - 1))
-                newValue =
-                  Math.min(Math.min(newValue, lastValue), costs[j]) + 1;
-              costs[j - 1] = lastValue;
-              lastValue = newValue;
-            }
-          }
-        }
-        if (i > 0) costs[s2.length] = lastValue;
-      }
-      return costs[s2.length];
-    }
+  if (e.which == 13 && submited == 0) {
+    submit();
   }
 });
 
 $(document).on("click", ".next", function () {
-  assignQ(currentVal, currentPoint, currentParent);
+  if (submited == 1) {
+    assignQ(currentVal, currentPoint, currentParent);
+    submited = 0;
+  } else {
+    submit();
+  }
 });
 $(document).on("keypress", ".next", function (e) {
-  if (e.which == 13) {
+  if (e.which == 13 && submited == 1) {
     assignQ(currentVal, currentPoint, currentParent);
+    submited = 0;
   }
 });
 $(document).on("click", ".back", function () {
-  loadCats();
+  eval(prevPage);
 });
 $(document).on("keypress", ".back", function (e) {
   if (e.which == 13) {
-    loadCats();
+    eval(prevPage);
   }
 });
 
@@ -434,7 +313,7 @@ function checkForEmpty() {
 }
 
 function loadCats() {
-  emptyGame();
+  emptyGame("no");
   $(".score").text("Score: " + score);
   checkForEmpty();
   for (let i = 0; i < cats.length; i++) {
@@ -458,6 +337,142 @@ function loadCats() {
 function noMoreCats() {
   $(".score").text("");
   // hide the text
-  emptyGame();
+  emptyGame("no");
   gameFrame.append("<h1> You finished! \n Final Score: " + score + "</h1>");
+}
+
+function submit() {
+  userAnswer = $(".user-answer").val();
+  $(".user-answer").val(userAnswer);
+  $(".user-answer").prop("disabled", "disabled");
+  $(".next").focus();
+
+  perCorrect = similarity(cAnswer, userAnswer);
+
+  console.log(
+    "A: " +
+      cAnswer +
+      " You Put: " +
+      userAnswer +
+      " Persentage Correct: " +
+      perCorrect
+  );
+  if (
+    cAnswer
+      .toLowerCase()
+      .replace(/(\((.*?)\))/g, "")
+      .replace(/(\<(.*?)\>)/g, "").length > 6
+  ) {
+    if (perCorrect >= 0.692) {
+      $(".user-answer").attr("id", "cor");
+      score += eval($(".user-answer").attr("point"));
+      $(".score").text("Score: " + score);
+    } else {
+      $(".user-answer").attr("id", "incor");
+      score -= eval($(".user-answer").attr("point"));
+      $(".score").text("Score: " + score);
+      gameFrame.append(
+        `<span id="user-span">Correct Answer is: ${cAnswer}<br></span>`
+      );
+    }
+  } else {
+    if (perCorrect >= 0.8) {
+      $(".user-answer").attr("id", "cor");
+      score += eval($(".user-answer").attr("point"));
+      $(".score").text("Score: " + score);
+    } else {
+      $(".user-answer").attr("id", "incor");
+      score -= eval($(".user-answer").attr("point"));
+      $(".score").text("Score: " + score);
+      gameFrame.append(
+        `<span id="user-span">Correct Answer is: ${cAnswer}<br></span>`
+      );
+    }
+  }
+
+  function similarity(s1, s2) {
+    var longer = s1;
+    var shorter = s2;
+    if (s1.length < s2.length) {
+      longer = s2;
+      shorter = s1;
+    }
+    var longerLength = longer.length;
+    if (longerLength == 0) {
+      return 1.0;
+    }
+    return (
+      (longerLength - editDistance(longer, shorter)) / parseFloat(longerLength)
+    );
+  }
+
+  function editDistance(s1, s2) {
+    s1 = s1.toLowerCase().replace(/(\((.*?)\))/g, "");
+    s1 = s1.replace(/(\<(.*?)\>)/g, "");
+    s2 = s2.toLowerCase().replace(/(\((.*?)\))/g, "");
+    s2 = s2.replace(/(\<(.*?)\>)/g, "");
+
+    var costs = new Array();
+    for (var i = 0; i <= s1.length; i++) {
+      var lastValue = i;
+      for (var j = 0; j <= s2.length; j++) {
+        if (i == 0) costs[j] = j;
+        else {
+          if (j > 0) {
+            var newValue = costs[j - 1];
+            if (s1.charAt(i - 1) != s2.charAt(j - 1))
+              newValue = Math.min(Math.min(newValue, lastValue), costs[j]) + 1;
+            costs[j - 1] = lastValue;
+            lastValue = newValue;
+          }
+        }
+      }
+      if (i > 0) costs[s2.length] = lastValue;
+    }
+    return costs[s2.length];
+  }
+  submited = 1;
+}
+
+function loadNums(val) {
+  emptyGame();
+  gameFrame.append(`<h1>${catText}</h1>`);
+  prevPage = "loadCats()"
+  var temp = 100;
+  var temp1 = 1;
+  
+  if (val == "holidays") {
+    for (let i = 2; i < holidays.length; i++) {
+      newNumBtn = $(
+        `<button class='cat-btn num' value='holi${temp1}' parent="holidays">${temp}</button>`
+      );
+      if (eval(`holi${temp1}`).length != 0) {
+        gameFrame.append(newNumBtn);
+      }
+      temp += 100;
+      temp1++;
+    }
+  } else if (val == "usStates") {
+    for (let i = 2; i < usStates.length; i++) {
+      newNumBtn = $(
+        `<button class='cat-btn num' value='state${temp1}' parent="usState">${temp}</button>`
+      );
+      if (eval(`state${temp1}`).length != 0) {
+        gameFrame.append(newNumBtn);
+      }
+      temp += 100;
+      temp1++;
+    }
+  } else if (val == "foods") {
+    for (let i = 2; i < foods.length; i++) {
+      newNumBtn = $(
+        `<button class='cat-btn num' value='food${temp1}' parent="foods">${temp}</button>`
+      );
+      if (eval(`food${temp1}`).length != 0) {
+        gameFrame.append(newNumBtn);
+      }
+      temp += 100;
+      temp1++;
+    }
+  }
 }
