@@ -227,10 +227,10 @@ $(document).on("click", ".num", function () {
   //When button clicked, give the player a random question to answer with that val
   assignQ(numVal, point, parent);
 });
-
+let randomNum;
 function assignQ(value, point, par) {
   if (eval(value).length != 0) {
-    const randomNum = Math.floor(Math.random() * eval(value).length);
+    randomNum = Math.floor(Math.random() * eval(value).length);
     emptyGame();
 
     $(".score").text("Score: " + score);
