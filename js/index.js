@@ -412,8 +412,10 @@ function submit() {
   function editDistance(s1, s2) {
     s1 = s1.toLowerCase().replace(/(\((.*?)\))/g, "");
     s1 = s1.replace(/(\<(.*?)\>)/g, "");
+    s1 = s1.replace(/\\['"]/ig, "")
     s2 = s2.toLowerCase().replace(/(\((.*?)\))/g, "");
     s2 = s2.replace(/(\<(.*?)\>)/g, "");
+    s2 = s2.replace(/\\['"]/ig, "")
 
     var costs = new Array();
     for (var i = 0; i <= s1.length; i++) {
