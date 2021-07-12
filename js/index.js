@@ -237,6 +237,7 @@ function assignQ(value, point, par) {
 
     cQuestion = eval(value)[randomNum][0].question;
     cAnswer = eval(value)[randomNum][0].answer;
+    cQuestion = cQuestion.replace(/\\['"]/ig, "")
 
     newQuestion = $(`<h1>${cQuestion}</h1>`);
     gameFrame.append(newQuestion);
